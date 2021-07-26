@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+$TealColour: rgb(4, 116, 116);
+@mixin borderProperty {  
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+*
+{
+  font-family: Lexend;
+  letter-spacing: 2px;
+}
+.Navigation
+{
+  text-align: right;
+  height: 26px;
+  background-color: $TealColour;
+  a {
+    padding-top: 2px;
+    margin: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover
+    {
+      text-decoration: underline;
+    }
+    
+  }
+}
+
+.Heading
+{
+  margin: 20px;
+  text-align: center;
+  color: $TealColour;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.Date
+{
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: right;
+}
+.Text
+{  
+  color: $TealColour;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 10%;
+}
+.Form
+{
+  @include borderProperty;
+  display: block;
+  margin: 30px;
+  width: 70%;
+
+  button {
+    @include borderProperty;
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+    background-color: $TealColour;
+    color: whitesmoke;
+    font-weight: bold;
+    &:hover
+    {
+      color: black;
+    }
+  }
+}
+.FormControls
+{
+  display: flex;
+  margin: 20px;
+  
+  span
+  {
+    width: 150px;
+    font-weight: bold;
+  }
+
+  input
+  {
+    width: 200px;
+  }
+}
+.Footer
+{
+  width: 99%;
+  bottom: 0;
+  height: 25px;
+  background-color: black;
+  color: blanchedalmond;
+  margin: 2px;
+  text-align: center;
+  position: absolute;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+    .Heading
+    {
+      font-size: 25px;
+    }
+    .Date
+    {
+      font-size: 15px;
+    }
+  }
