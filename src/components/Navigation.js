@@ -1,10 +1,11 @@
 import React from 'react'
-import { Route, Link, Switch, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
      return (
           <nav className='Navigation'>
                <ul>
+                    <Link to='/'>Home</Link>
                     <Link to='/feedbacks'>Feedbacks</Link>
                     <Link to='/feedbacks/new'>Add a feedback</Link>
                </ul>

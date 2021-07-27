@@ -5,7 +5,7 @@ const Form = () => {
           <form className='Form'>
                <div className='FormControls'>
                     <span><label>Name:</label></span>
-                    <input type='text'/>
+                    <input type='text' autoFocus/>
                </div>
                <div className='FormControls'>
                     <span><label>Email Address:</label></span>
@@ -13,7 +13,7 @@ const Form = () => {
                </div>
                <div className='FormControls'>
                     <span><label>Comments:</label></span>
-                    <textarea type='text' rows='4' cols='28'/>
+                    <textarea type='text' rows='4' cols='32'/>
                </div>
                <button>Sign Up</button>
           </form>
