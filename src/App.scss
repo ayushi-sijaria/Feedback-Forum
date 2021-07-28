@@ -95,6 +95,11 @@ $TealColour: rgb(4, 116, 116);
     width: 250px;
   }
 }
+.Error
+{
+  margin: 0;
+  color: red;
+}
 .Feedbacks
 {
   color: $TealColour;
@@ -118,10 +123,25 @@ $TealColour: rgb(4, 116, 116);
   width: 70%;
   margin: 20px 100px;
   padding: 10px;
+  display: flex;
+  align-items: center;
   &:hover
   {
     box-shadow: 2px 2px 5px #ccc;
   }
+  button{
+    @include borderProperty;
+    background-color: $TealColour;
+    color: whitesmoke;
+    height: 35px;
+    position: fixed;
+    right: 30px;
+
+  }
+}
+.FeedbackList
+{
+  color: black;
 }
 .Footer
 {
