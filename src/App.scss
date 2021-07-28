@@ -112,6 +112,17 @@ $TealColour: rgb(4, 116, 116);
     color: black;
   }
 }
+.Feedback
+{
+  @include borderProperty;
+  width: 70%;
+  margin: 20px 100px;
+  padding: 10px;
+  &:hover
+  {
+    box-shadow: 2px 2px 5px #ccc;
+  }
+}
 .Footer
 {
   width: 99%;

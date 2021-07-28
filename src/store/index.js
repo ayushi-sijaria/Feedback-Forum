@@ -1,20 +1,18 @@
-import { createStore } from 'redux'
+import { createSlice, configureStore } from '@reduxjs/toolkit'
 const initialState={
-     feedbacks: []
+     feedbacks: ['Test Feedback']
 }
-const reducer = (state=initialState, action) => 
-{
-     switch(action.type)
-     {
-          case 'ADD_FEEDBACK':
-               {
-                    const newFeedbacks = [...state.feedbacks]
-                    newFeedbacks.push({data: action.payload})
-                    return {
-                        feedbacks: [...newFeedbacks]
-                    }
-               }
+const feedbackSlice = createSlice({
+     name: 'feedback',
+     initialState,
+     reducers: {
+          add(state, action) {
+               state.feedbacks.push(action.payload)
+          }
      }
-}
-const store = createStore(reducer)
+})
+const store = configureStore({
+     reducer: feedbackSlice.reducer
+})
+export const feedbackActions = feedbackSlice.actions
 export default store
