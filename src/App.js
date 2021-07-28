@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+
 import './App.scss'
 import Navigation from './components/Navigation'
 import FeedbackPage from './pages/FeedbackPage'
@@ -10,7 +11,8 @@ import Date from './UI/Date'
 import Footer from './UI/Footer'
 
 const App = () =>
- {  
+ {
+   
   return (
       <div>
         <Navigation/>

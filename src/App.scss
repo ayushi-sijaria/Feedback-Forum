@@ -10,6 +10,7 @@ $TealColour: rgb(4, 116, 116);
 {
   font-family: Lexend;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 .Navigation
 {
@@ -41,7 +42,6 @@ $TealColour: rgb(4, 116, 116);
 .Date
 {
   margin-top: 15px;
-  font-weight: bold;
   text-align: right;
 }
 .Image
@@ -52,7 +52,6 @@ $TealColour: rgb(4, 116, 116);
 {  
   color: $TealColour;
   font-style: italic;
-  font-weight: bold;
   font-size: 25px;
   margin-left: 10%;
 }
@@ -75,7 +74,6 @@ $TealColour: rgb(4, 116, 116);
     margin-bottom: 0;
     background-color: $TealColour;
     color: whitesmoke;
-    font-weight: bold;
     &:hover
     {
       color: black;
@@ -90,12 +88,28 @@ $TealColour: rgb(4, 116, 116);
   span
   {
     width: 150px;
-    font-weight: bold;
   }
 
   input
   {
     width: 250px;
+  }
+}
+.Feedbacks
+{
+  color: $TealColour;
+}
+.AllFeedback
+{
+  @include borderProperty;
+  background-color: $TealColour;
+  color: whitesmoke;
+  height: 40px;
+  width: 250px;
+  float: right;
+  &:hover
+  {
+    color: black;
   }
 }
 .Footer
@@ -108,7 +122,6 @@ $TealColour: rgb(4, 116, 116);
   margin: 2px;
   text-align: center;
   position: absolute;
-  font-weight: bold;
 }
 @media only screen 
   and (min-device-width: 320px) 

@@ -6,8 +6,7 @@ const Navigation = () => {
           <nav className='Navigation'>
                <ul>
                     <Link to='/'>Home</Link>
-                    <Link to='/feedbacks'>Feedbacks</Link>
-                    <Link to='/feedbacks/new'>Add a feedback</Link>
+                    <Link to='/feedbacks'>Feedback</Link>
                </ul>
           </nav>
      )
