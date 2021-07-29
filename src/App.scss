@@ -167,4 +167,38 @@ $TealColour: rgb(4, 116, 116);
     {
       font-size: 15px;
     }
+    .Form
+    {
+      margin:5%;
+      width: 80%;
+      button {
+        display: block;
+        width: 90%;
+        margin: 5%;
+      }
+    }
+    .FormControls
+    {
+      display: block;
+      input {
+        padding: 2px;
+        width: 90%;
+      }
+      textarea {
+        padding: 2px;
+        width: 199px;
+      }
+    }
+    .Feedbacks {
+      h1 {
+        font-size: 20px
+      }
+    }
+    .Feedback
+    {
+      margin: 5px;
+      button {
+        right: 10px;
+      }
+    }
   }

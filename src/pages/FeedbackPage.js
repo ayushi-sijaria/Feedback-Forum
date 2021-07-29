@@ -14,8 +14,7 @@ const FeedbackPage = () => {
      }
   const deleteFeedbackHandler = (index) =>
   {
-       alert('Feedback deleted cannot be recovered. Are you sure you want to continue?')
-       dispatch(feedbackActions.delete(index))
+     dispatch(feedbackActions.delete(index))
   }
      return (
           <div className='Feedbacks'>

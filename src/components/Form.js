@@ -58,7 +58,7 @@ const Form = () => {
                     <span><label>Email Address:</label></span>
                     <input type='text' onChange={setEmailHandler}/>
                </div>
-                    {invalidEmailAddress? <p className='Error'>Enter a valid name.</p>:null} 
+                    {invalidEmailAddress? <p className='Error'>Enter a valid Email Address.</p>:null} 
                <div className='FormControls'>
                     <span><label>Comments:</label></span>
                     <textarea type='text' rows='4' cols='32' onChange={setCommentHandler}/>
