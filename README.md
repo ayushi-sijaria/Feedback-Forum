@@ -17,4 +17,5 @@ Application is made responsive to work on both desktops and mobiles.
      /feedbacks - show list of feedbacks to signed in user.
      /feedbacks/new - will allow signed in user to add new feedback.
 5. Redux is used for store management i.e. to store feedbacks.
-6. Invalid URLs are taken care.
+6. Didn't find any good case for createSeleector.
+7. Invalid URLs are taken care.
