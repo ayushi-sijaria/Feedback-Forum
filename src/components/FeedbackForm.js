@@ -15,6 +15,11 @@ const FeedbackForm = () => {
      const feedbackSubmitHandler = (e) =>
      {
           e.preventDefault()
+          if(feedback.trim().length<=0)
+          {
+               alert('Feedback cannot be empty !')
+               return
+          }
           dispatch(feedbackActions.add(feedback))
           history.push('/feedbacks')
 
