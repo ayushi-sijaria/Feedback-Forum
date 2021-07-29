@@ -19,3 +19,4 @@ Application is made responsive to work on both desktops and mobiles.
 5. Redux is used for store management i.e. to store feedbacks.
 6. Didn't find any good case for createSeleector.
 7. Invalid URLs are taken care.
+8. Used SCSS for styling.
